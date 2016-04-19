@@ -18,7 +18,7 @@
            transformationBlock:(THBinderTransformationBlock)transformationBlock
 {
     if((self = [super init])) {
-        __weak id wToObject = toObject;
+         id wToObject = toObject;
         NSString *myToKeyPath = [toKeyPath copy];
         
         THObserverBlockWithChangeDictionary changeBlock;

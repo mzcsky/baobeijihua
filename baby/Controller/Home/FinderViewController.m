@@ -80,7 +80,7 @@
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
 {
-    return 6;
+    return 5;
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
@@ -146,19 +146,19 @@
 //            badgeField.text = msg;
 //            [cell.contentView addSubview:badgeField];
 //            [badgeField release];
-        }
-        else if(indexPath.section == 2){
-            imgView.image = [UIImage imageNamed:@"icon_bianbianbian.png"];
-            titleLabel.text = @"变变变  -- 像游戏一样画画";
+//        }
+//        else if(indexPath.section == 2){
+//            imgView.image = [UIImage imageNamed:@"icon_bianbianbian.png"];
+//            titleLabel.text = @"变变变  -- 像游戏一样画画";
 
-        }else if(indexPath.section == 3){
+        }else if(indexPath.section == 2){
             imgView.image = [UIImage imageNamed:@"icon_baobeijihua.png"];
             titleLabel.text = @"宝贝计画 -- 官方网站";
-        }else if(indexPath.section == 4){
+        }else if(indexPath.section == 3){
             imgView.image = [UIImage imageNamed:@"icon_huibenbao.png"];
             titleLabel.text = @"绘本宝 -- 看绘本，说绘本";
         }
-        else if(indexPath.section == 5){
+        else if(indexPath.section == 4){
             imgView.image = [UIImage imageNamed:@"icon_zuixindongtai.png"];
             titleLabel.text = @"最新动态";
         }
@@ -175,20 +175,19 @@ if (indexPath.section == 0) {
     } else if (indexPath.section == 1) {
         
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1017653419"] ];
+//    } else if (indexPath.section == 2) {
+//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/bian-bian-bian/id1022761408?l=zh&ls=1&mt=8"]];
+//
+//        
     } else if (indexPath.section == 2) {
-        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/us/app/bian-bian-bian/id1022761408?l=zh&ls=1&mt=8"]];
-        
-//        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://m.bbjhart.com/index.jsp"]];
-        
-    } else if (indexPath.section == 3) {
         
 //        [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://m.wsq.qq.com/251961196"]];
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://m.bbjhart.com/index.jsp"]];
-    } else if (indexPath.section == 4) {
+    } else if (indexPath.section == 3) {
         
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"https://itunes.apple.com/cn/app/id1061521366"]];
         
-    } else if (indexPath.section == 5){
+    } else if (indexPath.section == 4){
         [[UIApplication sharedApplication] openURL:[NSURL URLWithString:@"http://www.bbjhart.com/h-col-112.html"]];
     }
     
